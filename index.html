@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Jogo da velha </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    
+    <div id="players"></div>
+    <span id="aviso"> Vez do jogador 1</span>
+    <div id="game"></div>
+    <div id="controles">
+        <a href="#" onclick="jogo_da_velha.restart()" class="btn"> Jogar novamente :) </a>
+    </div>
+
+    <script src="jogo-da-velha.js"></script>
+    <script>
+        jogo_da_velha.init( document.getElementById('game') );
+        jogo_da_velha.desenhar();
+    </script>
+</body>
+</html>
